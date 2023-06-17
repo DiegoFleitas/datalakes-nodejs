@@ -75,3 +75,14 @@ The PostgreSQL database schema is available [here](https://github.com/Datalakes-
 [mit-by]: https://opensource.org/licenses/MIT
 [mit-by-shield]: https://img.shields.io/badge/License-MIT-g.svg
 [uptime-by-shield]: https://img.shields.io/uptimerobot/ratio/m787532337-a369e1ee818df93c931a3bdb
+
+### Running from Docker
+
+A Dockerfile is provided to quickly build and run the Datalakes backend application in a Docker container, isolating it from your local environment. You can do this by executing the following commands:
+
+```console
+docker build -t datalakes-be .
+docker run -p 4000:4000 -d datalakes-be
+```
+
+These commands will build the Docker image and then start a container from that image, mapping port 4000 on your local machine to port 4000 in the Docker container. The application should be accessible on your local machine at http://localhost:4000.
