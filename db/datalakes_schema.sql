@@ -4,7 +4,8 @@
 
 -- Dumped from database version 11.12
 
-CREATE DATABASE datalakes WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'en_US.UTF-8';
+-- CREATE DATABASE datalakes WITH TEMPLATE = template0 ENCODING = 'UTF8' LOCALE = 'en_US.UTF-8';
+CREATE DATABASE datalakes WITH TEMPLATE = template0 ENCODING = 'UTF8';
 
 
 \connect datalakes
